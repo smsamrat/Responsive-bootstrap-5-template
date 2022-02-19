@@ -6,8 +6,8 @@
         font-weight: 800;
     }
     .logo img {
-        height: 55px;
-        width: 190px;
+        height: 37px;
+        width: 170px;
     }
     .owl-carousel .owl-item .item img {
         display: block;
@@ -49,6 +49,15 @@
     .card-area .card-body p {
         font-size: 22px;
     }
+    /* survice section menu */
+    .survice-menu ul li a {
+        display: none;
+    }
+    .survice-details img {
+        width: 30%;
+        height: 30%;
+        margin: 70px 5px;
+    }
 }
 
 
@@ -81,6 +90,18 @@
     .fotter-copyright p {
         font-size: 12px;
     }
+/* survice section menu */
+    .survice-menu ul li a {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 5px 15px;
+        display: none;
+    }
+    .survice-details img {
+        width: 20%;
+        height: 20%;
+        margin: 0px 11px;
+    }
 }
 
 
@@ -98,6 +119,18 @@
     }
     .fotter-text p {
         font-size: 13px;
+    }
+    /* survice area menu */
+    .survice-menu ul li a {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 5px 15px;
+        display: block;
+    }
+    .survice-details img {
+        width: 30%;
+        height: 30%;
+        margin: 100px 11px;
     }
 }
 
@@ -117,6 +150,20 @@
     .img-area img {
         width: 20%;
     }
+
+    /* survice area menu */
+    .survice-menu ul li a {
+        font-size: 15px;
+        padding: 5px 25px;
+        display: block;
+
+    }
+    .survice-details img {
+        width: 30%;
+        height: 30%;
+        margin: 100px 11px;
+    }
+
 }
 
 
@@ -132,4 +179,10 @@
     .fotter .img-area img {
         width: 20%;
     }
+    /* survice section menu */
+    .survice-menu ul li a {
+        font-size: 18px;
+        padding: 5px 40px;
+        display: block;
+      }
 }

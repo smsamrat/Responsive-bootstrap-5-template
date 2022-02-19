@@ -64,7 +64,7 @@ nav #icon {
 
 @media (max-width: 1040px) {}
 
-@media (max-width: 909px) {
+@media (max-width: 950px) {
     nav #icon {
         display: block;
     }
@@ -368,3 +368,12 @@ ul.porfolio_menu {
 
 
 /* fotter section end */
+
+/* carousel section part in survice menu */
+
+.carousel {
+    position: relative;
+    top: -17px;
+}
+  
+  
