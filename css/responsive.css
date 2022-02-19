@@ -1,0 +1,135 @@
+@media (min-width: 350px) {
+    label.logo {
+        padding: 0px 35px;
+        font-size: 50px;
+        line-height: 61px;
+        font-weight: 800;
+    }
+    .logo img {
+        height: 55px;
+        width: 190px;
+    }
+    .owl-carousel .owl-item .item img {
+        display: block;
+        width: 100%;
+    }
+    /* plan */
+    plan p {
+        font-size: 24px;
+        text-align: justify;
+    }
+    /* potfolio */
+    ul.porfolio_menu {
+        padding: 0;
+    }
+    .porfolio_menu li {
+        padding: 0 6px;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: black;
+        font-weight: 700;
+        text-shadow: none;
+    }
+    /* fotter */
+    .img-area img {
+        width: 40%;
+    }
+    .fotter-icon i {
+        font-size: 30px;
+    }
+    .fotter-text p {
+        font-size: 15px;
+        text-shadow: none;
+        letter-spacing: 1px;
+    }
+    .fotter-copyright p {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .card-area .card-body p {
+        font-size: 22px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .card-area .card-body p {
+        font-size: 22px;
+    }
+    label.logo {
+        padding: 0 100px;
+        font-size: 50px;
+        line-height: 61px;
+    }
+    /* porfpolio */
+    .owl-carousel .owl-item .item img {
+        display: block;
+        width: 90%;
+    }
+    /* fotter */
+    .img-area img {
+        width: 40%;
+    }
+    .fotter-icon i {
+        font-size: 30px;
+    }
+    .fotter-text p {
+        font-size: 13px;
+    }
+    .fotter-copyright p {
+        font-size: 12px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    label.logo {
+        padding: 0 100px;
+        font-size: 50px;
+        line-height: 61px;
+    }
+    /* fotter */
+    .img-area img {
+        width: 25%;
+    }
+    .fotter-text p {
+        font-size: 13px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    label.logo {
+        padding: 0 100px;
+        font-size: 50px;
+        line-height: 61px;
+    }
+    .card-area .card-body p {
+        font-size: 16px;
+    }
+    /* fotter */
+    .img-area img {
+        width: 20%;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    label.logo {
+        padding: 0 100px;
+        font-size: 50px;
+        line-height: 61px;
+    }
+    /* fotter */
+    .fotter .img-area img {
+        width: 20%;
+    }
+}
