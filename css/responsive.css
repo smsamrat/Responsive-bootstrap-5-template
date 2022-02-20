@@ -1,3 +1,7 @@
+.container-fluid {
+    scroll-behavior: smooth;
+    transition: all 0.5s;
+  }
 @media (min-width: 350px) {
     label.logo {
         padding: 0px 35px;
@@ -50,8 +54,21 @@
         font-size: 22px;
     }
     /* survice section menu */
+    .carousel {
+        display: none;
+       
+      }
+      .survice-menu{
+        padding-top: 50px;
+    }
     .survice-menu ul li a {
         display: none;
+    }
+    .survice-text h3 {
+        font-size: 20px;
+    }
+    .survice-details p {
+        font-size: 22px;
     }
     .survice-details img {
         width: 30%;
@@ -91,11 +108,24 @@
         font-size: 12px;
     }
 /* survice section menu */
+    .carousel {
+        display: none;
+    
+    }
+    .survice-menu{
+        padding-top: 50px;
+    }
     .survice-menu ul li a {
         font-size: 13px;
         font-weight: 500;
         padding: 5px 15px;
         display: none;
+    }
+    .survice-text h3 {
+        font-size: 20px;
+    }
+    .survice-details p {
+        font-size: 16px;
     }
     .survice-details img {
         width: 20%;
@@ -121,11 +151,22 @@
         font-size: 13px;
     }
     /* survice area menu */
+
+    .carousel {
+        display: block;
+    
+    }
+    .survice-menu{
+        padding-top: 0px;
+    }
     .survice-menu ul li a {
         font-size: 13px;
         font-weight: 500;
         padding: 5px 15px;
         display: block;
+    }
+    .survice-text h3 {
+        font-size: 16px;
     }
     .survice-details img {
         width: 30%;
@@ -152,6 +193,7 @@
     }
 
     /* survice area menu */
+
     .survice-menu ul li a {
         font-size: 15px;
         padding: 5px 25px;
@@ -179,6 +221,7 @@
     .fotter .img-area img {
         width: 20%;
     }
+
     /* survice section menu */
     .survice-menu ul li a {
         font-size: 18px;

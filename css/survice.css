@@ -3,102 +3,6 @@
   margin: 0;
   list-style: none;
 }
-/* navbar */
-body .container {
-  background: #efe6e6;
-}
-
-nav {
-  height: 80px;
-  width: 100%;
-  background: #2271b3;
-}
-
-label.logo {
-  padding: 0 100px;
-  font-size: 50px;
-  line-height: 61px;
-}
-
-.logo img {
-  height: 80px;
-  width: 50px;
-}
-
-nav ul {
-  float: right;
-  margin-right: 35px;
-}
-
-nav li {
-  display: inline-block;
-  margin: 0px 5px;
-  line-height: 80px;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 800;
-  border: 1px solid transparent;
-  text-transform: uppercase;
-  color: black;
-}
-
-.active,
-a:hover {
-  border: 1px solid #fff;
-  transform: all 0.5s;
-  border-radius: 5px;
-}
-
-nav #icon {
-  color: black;
-  font-size: 35px;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-
-@media (max-width: 1040px) {}
-
-@media (max-width: 950px) {
-  nav #icon {
-      display: block;
-  }
-  nav ul {
-      position: fixed;
-      width: 50%;
-      height: 500px;
-      top: 80px;
-      right: -100%;
-      text-align: center;
-      background: black;
-      transition: all 0.5s;
-      margin: 0;
-  }
-  nav li {
-      display: block;
-  }
-  nav li a {
-      font-size: 16px;
-      color: white;
-  }
-  .active,
-  a:hover {
-      border: none;
-      color: antiquewhite
-  }
-  nav ul.show {
-      right: 0;
-      z-index: 3;
-  }
-}
-
-/* navbar end */
-
 
 /* slider_area start */
 .carousel {
@@ -110,11 +14,13 @@ nav #icon {
   font-size: 70px;
   color: red;
   font-weight: 700;
+  margin-top: 70px;
 }
-.carousel-control-next i{
+.carousel-control-next i {
   font-size: 70px;
   color: red;
   font-weight: 700;
+  margin-top: 70px;
 }
 .carousel-indicators [data-bs-target]{
   background-color: red
@@ -150,19 +56,37 @@ nav #icon {
   border: none;
 }
 
+.active, .survice-menu ul li a:hover{
+  color: red;
+  background: rebeccapurple;
+}
+
 .survice-details{
   display: flex;
+  overflow: hidden;
 }
+.survice-details p{
+  padding-right: 10px;
+}
+
+
 .survice-details img {
   width: 30%;
   height: 30%;
   margin: 100px 5px;
+  transition: all 0.5s;
+}
+
+.survice-details img:hover{
+  transform: scale(1.2);
+}
+.survice-details .survice-text{
+  text-align: justify;
 }
 .survice-text h3 {
-  font-size: 16px;
+  text-align: initial;
 }
-.survice-content .text {
-  /* padding: 68px 25px; */
+.survice-content h1 {
   display: flex;
   justify-content: center;
   text-align: center;
