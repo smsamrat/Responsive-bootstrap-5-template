@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <nav class="navber-fixed-top">
+            <label class="logo">
+                <img src="assets/img/logo_dark.png" alt="">
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="survice.html">Survice</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <label id="icon">
+                <i class="fa fa-bars"></i>
+            </label>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="">OUR WORK GALLERY</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="working-gallary">
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+                        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                        <button class="btn" onclick="filterSelection('people')"> People</button>
+                        </div>
+                        
+                        <!-- Portfolio Gallery Grid -->
+                        
+                        <div class="column nature">
+                            <div class="content">
+                            <img src="assets/img/mountains1.jpg" alt="Mountains" style="width:100%">
+                            <h4>Mountains</h4>
+                            <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <div class="column nature">
+                            <div class="content">
+                            <img src="assets/img/mountains2.jpg" alt="Lights" style="width:100%">
+                            <h4>Lights</h4>
+                            <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <div class="column nature">
+                            <div class="content">
+                            <img src="assets/img/mountains3.jpg" alt="Nature" style="width:100%">
+                            <h4>Forest</h4>
+                            <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        
+                        <div class="column cars">
+                            <div class="content">
+                            <img src="assets/img/cars11.jpg" alt="Car" style="width:100%">
+                            <h4>Retro</h4>
+                            <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <div class="column cars">
+                            <div class="content">
+                            <img src="assets/img/cars22.jpg" alt="Car" style="width:100%">
+                            <h4>Fast</h4>
+                            <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <div class="column cars">
+                            <div class="content">
+                            <img src="assets/img/cars33.jpg" alt="Car" style="width:100%">
+                            <h4>Classic</h4>
+                            <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        
+                        <div class="column people">
+                            <div class="content">
+                            <img src="assets/img/people1.jpg" alt="Car" style="width:100%">
+                            <h4>Girl</h4>
+                            <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <div class="column people">
+                            <div class="content">
+                            <img src="assets/img/people2.jpg" alt="Car" style="width:100%">
+                            <h4>Man</h4>
+                            <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <div class="column people">
+                            <div class="content">
+                            <img src="assets/img/people3.jpg" alt="Car" style="width:100%">
+                            <h4>Woman</h4>
+                            <p>Lorem ipsum dolor..</p>
+                            </div>
+                        </div>
+                        <!-- END GRID -->
+                    </div>
+                        
+                        <!-- END MAIN -->   
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                $('#icon').click(function() {
+                    $('ul').toggleClass('show')
+                });
+            });
+    
+        </script>
+    
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("column");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              }
+            }
+            
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+            
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+            
+            
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+            </script>
+    </body>
+</html>

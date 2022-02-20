@@ -65,9 +65,10 @@
   display: flex;
   overflow: hidden;
 }
-.survice-details p{
-  padding-right: 10px;
+.survice-text{
+  padding-right: 15px;
 }
+
 
 
 .survice-details img {
