@@ -3,7 +3,9 @@
 }
 
 
-
+.container-fluid.gallary-area {
+  margin-top: 180px;
+}
 h1 {
   font-size: 30px;
   word-break: break-all;
